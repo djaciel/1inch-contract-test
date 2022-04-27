@@ -1,8 +1,5 @@
 {
   "name": "1inch-contract-test",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
   "scripts": {
     "compile": "hardhat compile",
     "test": "yarn clean && yarn compile && hardhat test --network localhost",
@@ -46,5 +43,14 @@
     "typechain": "^5.1.2",
     "typescript": "^4.5.2",
     "typescript-eslint": "^0.0.1-alpha.0"
+  },
+  "engines": {
+    "node": "=16"
+  },
+  "dependencies": {
+    "@types/node-fetch": "^2.6.1",
+    "node-fetch": "^3.2.3",
+    "web3": "^1.7.3",
+    "yesno": "^0.3.1"
   }
 }
