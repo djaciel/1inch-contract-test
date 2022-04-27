@@ -1,0 +1,23 @@
+{
+  "plugins": ["@typescript-eslint"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "extends": [
+    "eslint:recommended",
+    "prettier",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "rules": {
+    "node/no-unsupported-features/es-syntax": 0,
+    "node/no-unpublished-import": 0,
+    "comma-dangle": 0
+  },
+  "env": {
+    "es6": true,
+    "node": true
+  }
+}
